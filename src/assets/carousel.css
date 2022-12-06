@@ -1,0 +1,8 @@
+
+.CarouselImg{
+    width: 100%;
+    height: 23rem;
+    /* background-color: aqua; */
+    display: flex;
+    background-size: cover;
+}
