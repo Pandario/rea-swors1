@@ -1,0 +1,21 @@
+.reviews {
+    width: 100%;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    margin: 25px 80px 10px;
+
+}
+
+.circle {
+    padding: 0px 20px 0px;
+    text-align: center;
+
+}
+.circle img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+}
+
