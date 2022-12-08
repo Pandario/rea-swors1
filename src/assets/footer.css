@@ -1,0 +1,23 @@
+.footer {
+    background: linear-gradient(90deg, rgb(227, 97, 3), rgb(67, 28, 1)) ;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.2rem;
+    
+}
+
+.floatBegin {
+    margin-left: 20px;
+}
+
+.floatEnd {
+    margin-right: 20px;
+}
+
+.floatEnd a:visited {
+    color: #fff;
+}

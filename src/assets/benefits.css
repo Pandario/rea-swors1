@@ -1,0 +1,47 @@
+.benefits {
+    width: 100%;
+    background-color: rgb(247, 247, 247);
+}
+.benefits img {
+    width: 500px;
+    height: 500px;
+}
+
+.benefits h2 {
+    text-align: center;
+}
+
+.advaLeftText {
+    width: 500px;
+}
+
+.advaRightText {
+    width: 500px;
+    margin-left: 25%;
+}
+
+.advaLeftImg {
+    margin-left: 25%;
+}
+
+.advantagesLeft {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 100px;
+    width: 100%;
+    border: 5px;
+}
+
+.advantagesRight {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 100px;
+    width: 100%;
+    border: 5px;
+}
+
+.benefits hr {
+    width: 10%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}

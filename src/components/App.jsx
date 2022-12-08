@@ -5,6 +5,7 @@ import Carousel from './Carousel';
 import {SliderData} from './SliderData';
 import Reviews from './Reviews';
 import Benefits from './Benefits';
+import Footer from './Footer';
 // import SliderData from './SliderData';
 
 
@@ -15,6 +16,8 @@ function App() {
       <Carousel slides={SliderData}/>
       <Reviews />
       <Benefits />
+      <Footer />
+
     </div>
   );
 }
