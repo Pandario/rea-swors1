@@ -1,0 +1,55 @@
+.popUp {
+  display: flex;
+  position: absolute;
+  border-radius: 10px;
+  width: 500px;
+  height: 500px;
+  background-color: rgb(255, 255, 255);
+  top: 50%;
+  transform: translateY(-50%);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+}
+
+.close {
+  cursor: pointer;
+}
+
+.closeBtn {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  width: 23px;
+  height: 18px;
+  background-color: bisque;
+  position: fixed;
+  right: 5%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+  top: 5%;
+  border-radius: 50%;
+}
+
+.closeBtn:active {
+  background-color: rgb(241, 211, 175)
+}
+
+.submit {
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 5%;
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+  box-shadow: 2px 2px 2px 2px rgba(75, 75, 75, 0.7);
+  cursor: pointer;
+}
+
+.submit:active {
+  background-color: rgb(75, 75, 75);
+  opacity: 0.2;
+}

@@ -2,9 +2,11 @@ import React, {useState} from 'react';
 import '../assets/carousel.css';
 import {SliderData} from './SliderData';
 import {FaArrowAltCircleRight, FaArrowAltCircleLeft} from "react-icons/fa";
+import Popup from './Popup';
 
 const Carousel = ({ slides }) => {
     const [current, setCurrent] = useState(0);
+    const [openModal, setOpenModal] = useState(false);
     const length = slides.length;
     
     const nextSlide = () => {
@@ -20,12 +22,14 @@ const Carousel = ({ slides }) => {
     if(!Array.isArray(slides) || slides.length <= 0) {
         return null;
     }
-
+    
     return (
+        
         <section className="container-slider">
+            <Popup open ={openModal} onClose={() => setOpenModal(false)} />
             <FaArrowAltCircleLeft className='left-arrow' onClick={prevSlide} />
             <FaArrowAltCircleRight className='right-arrow' onClick={nextSlide}/>
-            <button className='join'>Join us</button>
+            <button className='join' onClick={() => setOpenModal(true)}>Join us</button>
             {SliderData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slide active' : 'slide'} key=
@@ -41,5 +45,5 @@ const Carousel = ({ slides }) => {
         </section>
     );
 }
-  
+
   export default Carousel;
