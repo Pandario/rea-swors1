@@ -1,4 +1,5 @@
 .popUp {
+  background: linear-gradient(90deg, rgb(104, 2, 246), rgb(74, 227, 3)) ;
   display: flex;
   position: absolute;
   border-radius: 10px;
@@ -22,7 +23,7 @@
   display: flex;
   width: 23px;
   height: 18px;
-  background-color: bisque;
+  background-color: rgb(46, 141, 2);
   position: fixed;
   right: 5%;
   transform: translateY(-50%);
@@ -32,7 +33,7 @@
 }
 
 .closeBtn:active {
-  background-color: rgb(241, 211, 175)
+  background-color: rgba(22, 67, 1, 0.4);
 }
 
 .submit {
@@ -52,4 +53,46 @@
 .submit:active {
   background-color: rgb(75, 75, 75);
   opacity: 0.2;
+}
+
+.namePop {
+  position: absolute;
+  padding: 10px;
+  top: 20%;
+  right: 25%;
+}
+
+
+.emailPop {
+    position: absolute;
+    padding: 10px;
+    top: 30%;
+    right: 25%;
+
+}
+
+.textPop1 {
+  position: absolute;
+  padding: 10px;
+  top: 40%;
+  right: 61%;
+  
+}
+
+.textPop2 {
+  position: absolute;
+  padding: 10px;
+  top: 40%;
+  right: 28%;
+}
+
+
+.subscribePop {
+  position: absolute;
+  padding: 10px;
+  top: 10%;
+  right: 40%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(227, 97, 3)
 }
