@@ -8,8 +8,20 @@ const Popup  = ({open, onClose}) => {
   
   const handleSubmit = (e) => {
     e.preventDefault();
-    const blog = {name, email, text};
-    console.log(blog);
+    const data = { 
+      members: [
+        {
+          email_address: email,
+                status: "subscribed",
+                merge_fields: {
+                    FNAME: name,
+                    LNAME: text
+                }
+        }
+      ]
+    };
+    let jsonData = JSON.stringify(data);
+    console.log(jsonData);
   };
 
   if (!open) return null;
@@ -52,7 +64,6 @@ const Popup  = ({open, onClose}) => {
             value={text}
             onChange={(e) => setText(e.target.value)}
           ></textarea>
-          {console.log(name, email, text)}
         </div>
 
         <div className="submitBtn">
